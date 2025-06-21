@@ -1,0 +1,12 @@
+1. Understanding Recursive Algorithms:
+Recursion is a technique where a function calls itself, breaking a problem into smaller, similar sub-problems until a simple base case is reached. It simplifies solutions for naturally recursive problems by mirroring their structure.
+
+2. Setup:
+A `calculateFutureValue` method recursively computes an investment's future worth. It takes the initial amount, growth rate, and number of years as parameters.
+
+3. Implementation:
+The recursive algorithm determines future value by multiplying the previous year's value by `(1 + growthRate)`, with `initialAmount` as the base case for zero years.
+
+4. Analysis:
+Time Complexity: The recursive algorithm's time complexity is O(n), where 'n' is the number of years, as it performs a constant number of operations for each year.
+Optimization: To avoid excessive computation (like stack overflow for large inputs), an iterative approach using a loop is preferred over recursion for this specific problem due to lower overhead. Memoization is unnecessary here as there are no overlapping subproblems.

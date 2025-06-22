@@ -1,0 +1,15 @@
+Understanding Array Representation:
+
+Explain how arrays are represented in memory and their advantages.
+Arrays store elements of the same type contiguously in memory. This contiguous storage allows for direct calculation of an element's address using its index and the base address, providing extremely fast $O(1)$ random access and good memory locality for cache performance.
+
+Analysis:
+
+Analyze the time complexity of each operation (add, search, traverse, delete).
+Add: $O(n)$ due to duplicate checks requiring a full scan.
+Search: $O(n)$ in worst-case, as it might scan the entire array.
+Traverse: $O(n)$, as every element must be visited.
+Delete: $O(n)$, involving searching and then shifting elements to fill the gap.
+
+Discuss the limitations of arrays and when to use them.
+Arrays have a fixed size, making dynamic resizing inefficient ($O(n)$ copy). Inserting or deleting elements in the middle is also slow ($O(n)$) due to element shifting. They are best used when the number of elements is known and static, and when fast random access by index is critical.

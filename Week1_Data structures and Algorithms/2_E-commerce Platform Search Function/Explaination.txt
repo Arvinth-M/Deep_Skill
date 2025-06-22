@@ -1,0 +1,20 @@
+1. Understand Asymptotic Notation:
+
+Big O notation: Describes an algorithm's performance (time/space) as input size grows, focusing on its upper bound.
+Best Case: Most efficient scenario, e.g., target found immediately.
+Average Case: Typical performance over varied inputs.
+Worst Case: Least efficient scenario, e.g., target found last or not at all.
+
+2. Setup:
+
+The `Product` class is set up with `productId`, `productName`, and `category` attributes to represent items for searching.
+
+3. Implementation:
+
+Linear Search: Iterates through the array sequentially, checking each product's ID until a match is found.
+Binary Search: Sorts the array by `productId` then repeatedly halves the search interval to quickly find the target ID.
+
+4. Analysis:
+
+Time Complexity: Linear Search is O(n); Binary Search is O(log n) for search (after an initial O(n log n) sort).
+Suitability for Platform: Binary Search is more suitable for an e-commerce platform due to its significantly faster O(log n) search time on large datasets, providing better scalability and user experience compared to Linear Search's O(n).
